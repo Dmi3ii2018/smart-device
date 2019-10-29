@@ -1,13 +1,24 @@
 body {
   @include font-regular;
-  width: 1834px;
+  // box-sizing: border-box;
+  width: 100%;
+  max-width: 2000px;
   min-width: 320px;
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 15px;
   color: #ffffff;
   background-color: #ffffff;
   line-height: 30px;
+}
+
+@media (max-width: $desktop-width-1024) {
+  body {
+    width: 100%;
+  }
 }
 
 img {
