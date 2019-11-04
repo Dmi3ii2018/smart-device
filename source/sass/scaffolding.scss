@@ -1,7 +1,7 @@
 body {
   @include font-regular;
-  // box-sizing: border-box;
-  width: 100%;
+  box-sizing: border-box;
+  //width: 100%;
   max-width: 2000px;
   min-width: 320px;
   padding: 0;
@@ -13,18 +13,6 @@ body {
   color: #ffffff;
   background-color: #ffffff;
   line-height: 30px;
-}
-
-@media (max-width: $desktop-width-1024) {
-  body {
-    width: 100%;
-  }
-}
-
-@media (max-width: $tablet-width) {
-  body {
-    width: 320px;
-  }
 }
 
 img {

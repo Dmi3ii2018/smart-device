@@ -11,25 +11,9 @@
   padding-top: 13px;
   padding-bottom: 268px;
   overflow: hidden;
-  // background-image: url("../../img/header-promo.png"),
-                    // url("../../img/header-background-dottes.png"),
-                    // url("../../img/header-background.png");
-  // background-position: 68vw 21vh, 0 0, 0 93%;
+
+  background-image: url("../../img/header-background-dottes.png");
   background-repeat: no-repeat;
-
-  &::before {
-    position: absolute;
-    top: 14%;
-    right: 16%;
-    content: "";
-    display: inline-block;
-    width: 636px;
-    height: 636px;
-
-    background-image: url("../../img/header-background.png");
-    background-position: 75.5% 64%;
-    background-repeat: no-repeat;
-  }
 
   &::after {
     position: absolute;
@@ -40,16 +24,24 @@
     width: 705px;
     height: 515px;
 
+
     background-image: url("../../img/header-promo.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../../img/header-promo2x.png");
+      background-size: 705px auto;
+      background-repeat: no-repeat;
+    }
   }
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    // background-image: url("../../img/header-promo2x.png"),
-                      // url("../../img/header-background-dottes@2x.png"),
-                      // url("../../img/header-background@2x.png");
+  & svg {
+    position: absolute;
+    top: 31%;
+    left: 53%;
   }
 }
+
 
 .page-header__contacts {
   position: relative;
@@ -58,6 +50,12 @@
   align-items: center;
 
   width: 100%;
+
+  & img {
+    position: absolute;
+    left: 0;
+    top: 20px;
+  }
 
   & p {
     width: 163px;
@@ -68,23 +66,6 @@
     font-weight: 800;
     font-size: 25px;
     line-height: 16px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 20px;
-
-      width: 52px;
-      height: 52px;
-
-      background: url("../../img/circuit.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../../img/circuit@2x.png");
-        background-size: 52px auto;
-      }
-    }
 
     & span {
       font-family: "roboto-condenced";
@@ -98,13 +79,13 @@
     }
   }
 
-  & button {
+  & a {
+    display: inline-block;
     width: 180px;
-    height: 45px;
-    border-radius: 5px;
-    background-color: transparent;
 
-    margin-right: 10.5%;
+    margin-right: 11.5%;
+    padding-top: 14px;
+    padding-bottom: 14px;
 
     font-family: "roboto-condenced";
     font-weight: bold;
@@ -114,7 +95,15 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
 
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: transparent;
+
     color: #FFFFFF;
+
+    &:hover {
+      @include hover-active;
+    }
   }
 
   & ul {
@@ -126,19 +115,36 @@
 
     & li {
       margin-right: 6%;
-      margin-left: 6%;
+      margin-left: 4.7%;
 
-      & a {
-        color: #ffffff;
-        font-family: "PTMono";
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        white-space: pre;
+      &:hover {
+        @include hover-active;
       }
 
-      & svg {
-        margin-right: 12px;
+      & a {
+        display: inline;
+
+        margin-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        border: none;
+        text-transform: lowercase;
+        letter-spacing: 0;
+
+        & svg {
+          position: static;
+          margin-right: 12px;
+        }
+
+        & span {
+          color: #ffffff;
+          font-family: "PTMono";
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 18px;
+          white-space: pre;
+        }
       }
     }
   }
@@ -148,10 +154,12 @@
   width: 47%;
 
   & h1 {
+    position: relative;
     padding-top: 50px;
     margin-top: 152px;
     margin-bottom: 24px;
     margin-left: -4px;
+    z-index: 10;
 
     font-family: "roboto-condenced-bold";
     font-weight: 700;
@@ -187,11 +195,13 @@
     }
   }
 
-  & button {
-    width: 407px;
-    height: 55px;
+  & a {
+    display: inline-block;
 
-    padding: 0;
+    width: 407px;
+
+    padding-top: 17px;
+    padding-bottom: 17px;
     margin-top: 20px;
     margin-left: 96px;
 
@@ -208,6 +218,10 @@
 
     background: #00B2FF;
     border-radius: 5px;
+
+    &:hover {
+      @include hover-active;
+    }
   }
 }
 
@@ -226,7 +240,7 @@
   .page-header__contacts {
     padding-right: 2%;
 
-    & button {
+    & a {
       margin-right: 0;
     }
   }
@@ -248,30 +262,56 @@
     padding-right: 2%;
     padding-bottom: 163px;
 
-    // background-size: 470px, cover, 1494px;
-    // background-position: 53vw 17vh, center, 46% -179px;
+    &::after {
+      top: 18%;
+      right: -3%;
+      left: unset;
+      width: 284px;
+      height: 340px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      // background-image: url("../../img/header-promo2x.png"),
-                        // url("../../img/header-background-dottes@2x.png"),
-                        // url("../../img/header-background@2x.png");
+      background-image: url("../../img/promo-tablet.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../../img/promo-tablet2x.png");
+        background-size: 284px auto;
+        background-repeat: no-repeat;
+      }
     }
 
-    &::before {
+    & svg {
+      top: 14%;
+      left: 59%;
+      width: 480px;
+      height: 480px;
+    }
+  }
+
+  .page-header__wrapper {
+    & img {
       top: -12%;
       left: 45%;
-      transform: scale(0.8);
     }
+  }
 
-    &::after {
-      transform: scale(0.65);
-      top: 5%;
-      left: 50%;
-    }
+  .page-header__button {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      white-space: nowrap;
   }
 
 
   .page-header__contacts {
+    & img {
+      top: 21%;
+      left: 1%;
+    }
+
     & p {
       width: 163px;
       padding-left: 76px;
@@ -280,6 +320,9 @@
       &::before {
         left: 6px;
         top: 21px;
+        width: 52px;
+        height: 52px;
+        background-repeat: no-repeat;
 
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
           background: url("../../img/circuit@2x.png");
@@ -292,36 +335,34 @@
       min-width: 200px;
       & li {
         margin-right: 0;
-        margin-left: 6%;
-
-        & svg {
-          transform: scale(1.4);
-        }
+        margin-left: 7%;
 
         & a {
-          width: 0;
-          overflow: hidden;
-          display: inline-block;
+          & svg {
+            transform: scale(1.4);
+            width: 19px;
+            height: 19px;
+          }
+
+          & span {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap;
+          }
         }
       }
-    }
-
-    & button {
-      border: 0;
-      clip: rect(0 0 0 0);
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
-      white-space: nowrap;
     }
   }
 
   .page-header__description {
     width: 53%;
-    margin-left: 9%;
+    margin-left: 10%;
 
     & h1 {
       padding-left: 0;
@@ -335,7 +376,7 @@
 
     & p {
       margin-top: 29px;
-      margin-bottom: 34px;
+      margin-bottom: 26px;
       font-size: 18px;
       line-height: 156.8%;
 
@@ -347,9 +388,10 @@
       }
     }
 
-    & button {
+    & a {
       width: 379px;
-      margin-left: 54px;
+      margin-left: 46px;
+      margin-top: 28px;
     }
   }
 }
@@ -357,9 +399,39 @@
 @media (max-width: $tablet-width) {
   .page-header {
     padding-top: 23px;
+    padding-bottom: 69px;
+
+    &::after {
+      top: 14%;
+      left: 9%;
+      width: 301px;
+      height: 226px;
+
+      background-image: url("../../img/promo-mobile.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../../img/promo-mobile2x.png");
+        background-size: 301px auto;
+        background-repeat: no-repeat;
+      }
+    }
+
+    & svg {
+      top: 11%;
+      left: 53%;
+      width: 460px;
+      height: 460px;
+    }
   }
 
   .page-header__contacts {
+    & img {
+      width: 38px;
+      height: 38px;
+      top: -13%;
+      left: 3%;
+    }
+
     & p {
       border: 0;
       clip: rect(0 0 0 0);
@@ -397,6 +469,7 @@
     margin-left: 3%;
 
     & h1 {
+      padding-top: 51px;
       font-weight: bold;
       font-size: 40px;
       line-height: 47px;
@@ -415,10 +488,13 @@
       }
     }
 
-    & button {
+    & a {
+      display: block;
+
       width: 288px;
-      margin-left: 0;
-      margin-top: 7px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 42px;
 
       font-size: 16px;
       line-height: 19px;
