@@ -6,19 +6,20 @@
 .page-header {
   position: relative;
   background-color: #1b2d37;
-  padding-left: 9%;
+  padding-left: 13%;
   padding-right: 4%;
-  padding-top: 13px;
-  padding-bottom: 268px;
+  padding-top: 7px;
+  padding-bottom: 274px;
   overflow: hidden;
 
   background-image: url("../../img/header-background-dottes.png");
   background-repeat: no-repeat;
+  background-size: cover;
 
   &::after {
     position: absolute;
-    top: 18%;
-    right: 5%;
+    top: 29%;
+    right: 9%;
     content: "";
     display: inline-block;
     width: 705px;
@@ -38,7 +39,7 @@
   & svg {
     position: absolute;
     top: 31%;
-    left: 53%;
+    left: 55%;
   }
 }
 
@@ -156,7 +157,7 @@
   & h1 {
     position: relative;
     padding-top: 50px;
-    margin-top: 152px;
+    margin-top: 159px;
     margin-bottom: 24px;
     margin-left: -4px;
     z-index: 10;
@@ -202,7 +203,7 @@
 
     padding-top: 17px;
     padding-bottom: 17px;
-    margin-top: 20px;
+    margin-top: 26px;
     margin-left: 96px;
 
     font-family: "roboto-condenced-bold";
@@ -361,7 +362,7 @@
   }
 
   .page-header__description {
-    width: 53%;
+    width: 55%;
     margin-left: 10%;
 
     & h1 {

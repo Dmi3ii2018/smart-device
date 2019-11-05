@@ -1,0 +1,81 @@
+.about-company {
+  position: relative;
+  box-sizing: border-box;
+  width: 61%;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  padding-left: 185px;
+
+  color: #666666;
+
+  &::before {
+    position: absolute;
+    top: 1%;
+    left: -2%;
+    content: "";
+    display: inline-block;
+    width: 220px;
+    height: 317px;
+
+    background-image: url("../../img/number.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/number@2x.png");
+      background-repeat: no-repeat;
+      background-size: 220px auto;
+    }
+  }
+
+  & h2 {
+    margin-bottom: 21px;
+
+    font-family: "roboto-condenced";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  & p {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.118em;
+  }
+
+  & a {
+    display: inline-block;
+
+    width: 177px;
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 27px;
+
+    border: 1px solid #00b2ff;
+    border-radius: 5px;
+    background-color: transparent;
+
+    font-weight: bold;
+    color: #00b2ff;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: $desktop-width-1024) {
+  .about-company {
+    width: 93%;
+
+      &::before {
+        top: 0;
+        left: -3%;
+        transform: scale(1.15);
+      }
+    & h2 {
+      font-size: 32px;
+    }
+  }
+}
