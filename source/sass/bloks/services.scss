@@ -1,0 +1,240 @@
+.services {
+  @include font-roboto-regular;
+
+  padding-top: 58px;
+  padding-bottom: 127px;
+
+  background-color: #1b2d37;
+}
+
+.services__wrapper {
+  width: 61%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  & h2 {
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  & ul {
+    @include list-clear;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 51px;
+
+    & li {
+      position: relative;
+      width: 31.6%;
+      min-height: 620px;
+
+      &::before {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        content: "";
+        display: inline-block;
+
+        width: 63px;
+        height: 63px;
+
+        background-color: #00b2ff;
+      }
+
+      &::after {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+
+        content: "";
+        display: inline-block;
+
+        width: 6px;
+        height: 6px;
+
+        border-top: 2px solid #ffffff;
+        border-right: 2px solid #ffffff;
+
+        transform: rotate(45deg);
+      }
+
+      & a {
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 30px;
+
+        display: inline-block;
+
+        width: 100%;
+        height: 100%;
+
+        padding-top: 49px;
+        padding-left: 13%;
+        padding-right: 41%;
+        box-sizing: border-box;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 0;
+
+        &:hover {
+          @include hover-active;
+        }
+      }
+    }
+  }
+}
+
+.services--production {
+  background-image: url("../../img/production.png");
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/production@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover auto;
+  }
+}
+
+.services--mount {
+  background-image: url("../../img/mount.png");
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/mount@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover auto;
+  }
+}
+
+.services--accessories {
+  background-image: url("../../img/accessories.png");
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/accessories@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover auto;
+  }
+}
+
+@media (max-width: $desktop-width-1024) {
+  & .services {
+    padding-top: 22px;
+  }
+  .services__wrapper {
+    width: 93%;
+
+    & h2 {
+      font-size: 32px;
+      line-height: 45px;
+      padding-right: 11%;
+    }
+
+    & ul {
+      flex-direction: column;
+
+      & li {
+        margin-bottom: 46px;
+
+        width: 100%;
+        min-height: 256px;
+
+        & a {
+          padding-left: 6%;
+          padding-top: 40px;
+          padding-right: 70%;
+          min-height: 256px;
+
+          background-position: 100% 100%;
+        }
+      }
+    }
+  }
+
+  .services--production {
+    background-image: url("../../img/production-tablet.png");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/production-tablet@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover auto;
+    }
+  }
+
+  .services--mount {
+    background-image: url("../../img/mount-tablet.png");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/mount-tablet@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover auto;
+    }
+  }
+
+  .services--accessories {
+    background-image: url("../../img/accessories-tablet.png");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/accessories-tablet@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover auto;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  & .services {
+    padding-top: 25px;
+  }
+  .services__wrapper {
+    width: 90.6%;
+
+    & h2 {
+      padding-right: 3%;
+      padding-left: 4%;
+
+      line-height: 40px;
+      font-size: 28px;
+    }
+
+    & ul {
+      margin-top: 42px;
+
+      & li {
+        margin-bottom: 30px;
+
+        & a {
+          padding-top: 20px;
+          padding-left: 12%;
+          padding-right: 36%;
+
+            font-size: 20px;
+            line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .services--production {
+    background-image: url("../../img/production-mobile.png");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/production-mobile@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover auto;
+    }
+  }
+
+  .services--mount {
+    background-image: url("../../img/mount-mobile.png");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/mount-mobile@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover auto;
+    }
+  }
+
+  .services--accessories {
+    background-image: url("../../img/accessories-mobile.png");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/accessories-mobile@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover auto;
+    }
+  }
+}
