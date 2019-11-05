@@ -63,15 +63,12 @@
     padding-left: 70px;
     padding-top: 9px;
 
-    font-family: "roboto-condenced";
-    font-weight: 800;
+    @include font-roboto-bold;
     font-size: 25px;
     line-height: 16px;
 
     & span {
-      font-family: "roboto-condenced";
-      font-style: normal;
-      font-weight: 500;
+      @include font-roboto-regular;
       font-size: 12px;
       line-height: 14px;
       letter-spacing: 1px;
@@ -88,8 +85,7 @@
     padding-top: 14px;
     padding-bottom: 14px;
 
-    font-family: "roboto-condenced";
-    font-weight: bold;
+    @include font-roboto-bold;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
@@ -140,8 +136,7 @@
 
         & span {
           color: #ffffff;
-          font-family: "PTMono";
-          font-weight: normal;
+          @include font-regular;
           font-size: 16px;
           line-height: 18px;
           white-space: pre;
@@ -162,8 +157,7 @@
     margin-left: -4px;
     z-index: 10;
 
-    font-family: "roboto-condenced-bold";
-    font-weight: 700;
+    @include font-roboto-bold;
     font-size: 80px;
     line-height: 94px;
     letter-spacing: 0.07em;
@@ -177,7 +171,7 @@
     padding-left: 13%;
     letter-spacing: 1px;
 
-    font-family: "PTMono";
+    @include font-regular;
     font-size: 22px;
     line-height: 34px;
     color: #ffffff;
@@ -206,8 +200,7 @@
     margin-top: 26px;
     margin-left: 96px;
 
-    font-family: "roboto-condenced-bold";
-    font-weight: bold;
+    @include font-roboto-bold;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -404,7 +397,8 @@
 
     &::after {
       top: 14%;
-      left: 9%;
+      left: unset;
+      right: 0;
       width: 301px;
       height: 226px;
 

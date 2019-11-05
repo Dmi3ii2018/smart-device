@@ -3,6 +3,16 @@
   font-weight: 400;
 }
 
+@mixin font-roboto-regular {
+  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+@mixin font-roboto-bold {
+  font-family: "roboto-condensed-bold", "Arial", sans-serif;
+  font-weight: 800;
+}
+
 
 @mixin list-clear {
   list-style: none;
