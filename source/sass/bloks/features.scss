@@ -92,6 +92,10 @@
         margin-bottom: 6px;
       }
 
+      & p {
+        padding-right: 24px;
+      }
+
       & svg {
         width: 34px;
         height: 34px;
@@ -106,17 +110,27 @@
   .features__list {
     width: 90.6%;
 
-    margin-top: 8px;
+    margin-top: 38px;
 
     & li {
       width: 100%;
 
       padding-left: 8%;
+      padding-right: 8.5%;
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding-bottom: 4px;
 
       & h3 {
         margin-bottom: 4px;;
 
         font-size: 20px;
+      }
+
+      & p {
+        margin-top: 5px;
+        padding-right: 10px;
+        line-height: 22px;
       }
 
       & svg {

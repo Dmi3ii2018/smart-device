@@ -40,7 +40,7 @@
   & p {
     font-size: 16px;
     line-height: 22px;
-    letter-spacing: 0.118em;
+    letter-spacing: 0.03em;
   }
 
   & a {
@@ -61,6 +61,12 @@
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+
+    &:hover {
+      border-color: transparent;
+      background-color: #00b2ff;
+      color: #ffffff;
+    }
   }
 }
 
@@ -68,13 +74,90 @@
   .about-company {
     width: 93%;
 
+    margin-top: 53px;
+
       &::before {
-        top: 0;
+        top: 7%;
         left: -3%;
         transform: scale(1.15);
       }
+
     & h2 {
+      margin-bottom: 10px;
       font-size: 32px;
+    }
+
+    & a {
+      margin-top: 42px;
+      margin-left: 1%;
+    }
+  }
+
+  .about-company__text-wrapper {
+    display: relative;
+
+    height: 207px;
+    overflow: hidden;
+
+    &::after {
+      position: absolute;
+      bottom: 78px;
+      right: 15%;
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 2px;
+      border-left: 2px solid #000000;
+      border-right: 2px solid #000000;
+    }
+
+    & p {
+      margin-top: 12px;
+      margin-bottom: 21px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about-company {
+    width: 90.6%;
+
+    padding-left: 0;
+    margin-top: 31px;
+
+    &::before {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      white-space: nowrap;
+    }
+
+    & h2 {
+      font-size: 28px;
+    }
+
+    & a {
+      margin-top: 27px;
+    }
+  }
+
+  .about-company__text-wrapper {
+    height: 361px;
+
+    margin-top: -8px;
+
+    &::after {
+      bottom: 77px;
+      right: 48%;
+    }
+
+    & p {
+      margin-bottom: 41px;
     }
   }
 }
