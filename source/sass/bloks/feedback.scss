@@ -1,0 +1,275 @@
+.feedback {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 71px;
+
+  &::before {
+    position: absolute;
+    top: 27%;
+    left: 18%;
+
+    content: "";
+    display: inline-block;
+    width: 511px;
+    height: 288px;
+
+    background-image: url("../../img/paper_airplane_3d_model_obj_blend_16ec3a53-a93c-4854-8f34-5481fc9139d1.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/paper_airplane_3d_model_obj_blend_16ec3a53-a93c-4854-8f34-5481fc9139d1@2x.png");
+      background-repeat: no-repeat;
+      background-size: 511px auto;
+    }
+  }
+
+
+  background-color: #00b2ff;
+
+  & svg {
+    position: absolute;
+    top: 15%;
+    left: 11%;
+  }
+}
+
+.feedback__wrapper {
+  width: 29.7%;
+
+  margin-left: 51%;
+
+  & h2 {
+    @include font-roboto-regular;
+
+    margin-bottom: 11px;
+
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  & p {
+    margin-top: 10px;
+
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  & form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 45px;
+  }
+
+  & input,
+  & textarea {
+    @include hover-active;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 2px solid transparent;
+    padding-left: 16px;
+
+    &:focus {
+      border-color: #ffffff;
+    }
+  }
+
+  & input {
+    width: 42.4%;
+    height: 50px;
+    margin-bottom: 40px;
+  }
+
+  & input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+
+    margin-bottom: 0;
+
+    background-color: transparent;
+    border-color: #ffffff;
+  }
+
+  & textarea {
+    width: 100%;
+
+    margin-bottom: 43px;
+    padding-top: 10px;
+  }
+
+  & div {
+    order: 5;
+    width: 39.4%;
+    font-size: 14px;
+
+    & label {
+      position: relative;
+      line-height: 16px;
+
+      &::before {
+        position: absolute;
+        right: 107%;
+        top: 0;
+
+        content: "";
+        display: inline-block;
+
+        width: 16px;
+        height: 16px;
+
+        border: 1px solid #ffffff;
+        background-color: transparent;
+      }
+
+      &::after {
+        position: absolute;
+        right: 111%;
+        top: 4px;
+
+        content: "";
+
+        width: 7px;
+        height: 4px;
+
+        transform: rotate(-45deg);
+      }
+    }
+
+    & input:checked + label::after {
+      border-bottom: 1px solid #ffffff;
+      border-left: 1px solid #ffffff;
+    }
+  }
+
+  & input[type="submit"] {
+    @include font-roboto-regular;
+    @include hover-active;
+
+    width: 48.8%;
+
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 1600px) {
+  .feedback {
+    padding-top: 52px;
+
+    & svg {
+      left: 0;
+    }
+
+    &::before {
+      left: 3%;
+    }
+  }
+
+  .feedback__wrapper {
+    margin-left: 58%;
+  }
+}
+
+@media (max-width: $desktop-width-1024) {
+  .feedback {
+    padding-bottom: 64px;
+
+    & svg {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .feedback__wrapper {
+    width: 76.5%;
+    margin-left: auto;
+    margin-right: auto;
+
+    & h2 {
+      font-size: 32px;
+    }
+
+    & form {
+      margin-top: 53px;
+    }
+
+    & input {
+      width: 43.4%;
+      height: 47px;
+    }
+
+    & textarea {
+      margin-bottom: 53px;
+    }
+
+    & input[type="submit"] {
+      width: 47.8%;
+    }
+
+    & div {
+      & label {
+        &::before {
+          top: 3px;
+          right: 112%;
+        }
+
+        &::after {
+          top: 7px;
+          right: 115%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .feedback {
+    padding-top: 9px;
+    padding-bottom: 24px;
+  }
+
+  .feedback__wrapper {
+    width: 90%;
+
+    & h2 {
+      font-size: 28px;
+      line-height: 38px;
+    }
+
+    & form {
+      margin-top: 26px;
+    }
+
+    & input {
+      width: 100%;
+
+      margin-bottom: 31px;
+    }
+
+    & input[type="submit"] {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    & div {
+      width: 100%;
+      padding-left: 12%;
+    }
+
+    & textarea {
+      height: 85px;
+      margin-bottom: 32px;
+    }
+  }
+}
