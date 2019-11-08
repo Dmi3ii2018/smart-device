@@ -1,27 +1,27 @@
-const headerButton = document.getElementById('header-button');
-const callbackButton = document.querySelectorAll('.modal-button');
-const modalContainer = document.querySelector('.modal-form');
-const modalCloseButton = document.querySelector('.modal-form__close-button');
+var headerButton = document.getElementById('header-button');
+var callbackButton = document.querySelectorAll('.modal-button');
+var modalContainer = document.querySelector('.modal-form');
+var modalCloseButton = document.querySelector('.modal-form__close-button');
 
-const mainForm = document.querySelector('.main-form').querySelector('form');
-const mainName = mainForm.querySelector('[name=name]');
-const mainTel = mainForm.querySelector('[name=tel]');
-const mainTextArea = mainForm.querySelector('[name=comment]');
+var mainForm = document.querySelector('.main-form').querySelector('form');
+var mainName = mainForm.querySelector('[name=name]');
+var mainTel = mainForm.querySelector('[name=tel]');
+var mainTextArea = mainForm.querySelector('[name=comment]');
 
-const modalForm = document.querySelector('.modal-form');
-const form = modalForm.querySelector('form');
-const name = form.querySelector('[name=name]');
-const tel = form.querySelector('[name=tel]');
-const textArea = form.querySelector('[name=comment]');
+var modalForm = document.querySelector('.modal-form');
+var form = modalForm.querySelector('form');
+var name = form.querySelector('[name=name]');
+var tel = form.querySelector('[name=tel]');
+var textArea = form.querySelector('[name=comment]');
 
 
-const siteMap = {
+var siteMap = {
   toggleButton: document.getElementById('footer-toggle'),
   siteMapList: document.querySelector('.site-map__list'),
   siteMapListLabel: document.querySelector('.footer__toggle-label'),
 }
 
-const footerAdress = {
+var footerAdress = {
   toggleButton: document.getElementById('adress-toggle'),
   siteMapList: document.querySelector('.footer__adress--description'),
   siteMapListLabel: document.querySelector('.adress-toggle--label'),
@@ -31,7 +31,7 @@ if(headerButton && document.documentElement.clientWidth < 768) {
   headerButton.textContent = "бесплатная консультация";
 };
 
-const onToggleButtonClick = ({toggleButton, siteMapList, siteMapListLabel}) => {
+var onToggleButtonClick = ({toggleButton, siteMapList, siteMapListLabel}) => {
   if (toggleButton.checked) {
     siteMapList.style = 'display: block';
     siteMapListLabel.style = 'height: 2px; overflow: hidden'
@@ -49,12 +49,12 @@ footerAdress.toggleButton.addEventListener('change', () => {
   onToggleButtonClick(footerAdress)
 });
 
-let isStorageSupport = true;
-let isStorageEmail = true;
-let storage = "";
-let telStorage = "";
+var isStorageSupport = true;
+var isStorageEmail = true;
+var storage = "";
+var telStorage = "";
 
-const onModalOpen = function (evt) {
+var onModalOpen = function (evt) {
   evt.preventDefault();
   if (modalForm.classList.contains("modal-form--closed")){
     modalForm.classList.remove("modal-form--closed");
@@ -103,7 +103,7 @@ window.addEventListener("keydown", (evt) => {
   }
 });
 
-const submitForm = (form, name, tel) => {
+var submitForm = (form, name, tel) => {
   form.addEventListener('submit', (evt) => {
     if (!name.value || !tel.value) {
       evt.preventDefault();
