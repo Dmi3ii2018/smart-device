@@ -1,0 +1,141 @@
+.modal-form {
+  position: absolute;
+  z-index: 150;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+  margin-left: 0;
+
+  & .modal {
+    position: absolute;
+    top: 134px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 21.6%;
+
+    padding-left: 39px;
+    padding-right: 39px;
+    padding-top: 23px;
+    padding-bottom: 46px;
+
+    background-color: #00b2ff;
+
+    & span {
+      @include font-roboto-regular;
+
+      margin-bottom: 11px;
+
+      font-size: 28px;
+      line-height: 51px;
+    }
+
+    & form {
+      margin-top: 26px;
+
+      & label {
+        &::after {
+          right: 108.5%;
+        }
+      }
+    }
+
+    & input,
+    & textarea {
+      padding-left: 25px;
+    }
+
+    & textarea {
+      min-height: 91px;
+      margin-bottom: 27px;
+    }
+
+    & input {
+      width: 100%;
+
+      margin-bottom: 27px;
+    }
+
+    & input[type="submit"] {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+
+    & div {
+      width: 100%;
+      padding-left: 12%;
+    }
+  }
+}
+
+.modal-form__close-button {
+  position: absolute;
+  top: 29px;
+  right: 5%;
+
+  width: 17px;
+  height: 17px;
+
+  @include hover-active;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    display: inline-block;
+
+    width: 18px;
+    height: 2px;
+
+    transform: rotate(-45deg);
+
+    background-color: #ffffff;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    display: inline-block;
+
+    width: 18px;
+    height: 2px;
+
+    transform: rotate(45deg);
+
+    background-color: #ffffff;
+  }
+}
+
+.modal-form--closed {
+  display:  none;
+}
+
+
+@media(max-width: 1500px) {
+  .modal-form {
+    .modal {
+      width: 42%;
+    }
+  }
+}
+
+@media (max-width: $desktop-width-1024) {
+  .modal-form {
+    .modal {
+      width: 48%;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .modal-form {
+    .modal {
+      width: 67%;
+    }
+  }
+}

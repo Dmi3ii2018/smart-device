@@ -221,7 +221,7 @@
       & label {
         &::before {
           top: 3px;
-          right: 112%;
+          right: 107%;
         }
 
         &::after {
@@ -265,6 +265,10 @@
     & div {
       width: 100%;
       padding-left: 12%;
+
+      & label::before {
+        right: 105%;
+      }
     }
 
     & textarea {
