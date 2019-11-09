@@ -27,30 +27,30 @@
 }
 
 .social-list--fb {
-  background-image: url("../../img/fb.png");
+  background-image: url("../img/fb.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/fb@2x.png");
+    background-image: url("../img/fb@2x.png");
     background-repeat: no-repeat;
     background-size: 27px auto;
   }
 }
 
 .social-list--ok {
-  background-image: url("../../img/ok.png");
+  background-image: url("../img/ok.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/ok@2x.png");
+    background-image: url("../img/ok@2x.png");
     background-repeat: no-repeat;
     background-size: 27px auto;
   }
 }
 
 .social-list--vk {
-  background-image: url("../../img/vk.png");
+  background-image: url("../img/vk.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/vk@2x.png");
+    background-image: url("../img/vk@2x.png");
     background-repeat: no-repeat;
     background-size: 27px auto;
   }

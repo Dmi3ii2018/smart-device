@@ -31,7 +31,7 @@ if(headerButton && document.documentElement.clientWidth < 768) {
   headerButton.textContent = "бесплатная консультация";
 };
 
-var onToggleButtonClick = ({toggleButton, siteMapList, siteMapListLabel}) => {
+var onToggleButtonClick = function(toggleButton, siteMapList, siteMapListLabel) {
   if (toggleButton.checked) {
     siteMapList.style = 'display: block';
     siteMapListLabel.style = 'height: 2px; overflow: hidden'
@@ -41,12 +41,12 @@ var onToggleButtonClick = ({toggleButton, siteMapList, siteMapListLabel}) => {
   }
 }
 
-siteMap.toggleButton.addEventListener('change', () => {
-  onToggleButtonClick(siteMap)
+siteMap.toggleButton.addEventListener('change', function() {
+  onToggleButtonClick(siteMap.toggleButton, siteMap.siteMapList, siteMap.siteMapListLabel)
 });
 
-footerAdress.toggleButton.addEventListener('change', () => {
-  onToggleButtonClick(footerAdress)
+footerAdress.toggleButton.addEventListener('change', function() {
+  onToggleButtonClick(footerAdress.toggleButton, footerAdress.siteMapList, footerAdress.siteMapListLabel)
 });
 
 var isStorageSupport = true;
@@ -89,12 +89,12 @@ for (var i = 0; i < callbackButton.length; i++) {
   callbackButton[i].addEventListener("click", onModalOpen);
 }
 
-modalCloseButton.addEventListener('click', (evt) => {
+modalCloseButton.addEventListener('click', function(evt) {
   evt.preventDefault();
   modalForm.classList.add("modal-form--closed");
 })
 
-window.addEventListener("keydown", (evt) => {
+window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     if (modalForm.classList.contains("modal-form--closed")) {
       evt.preventDefault();
@@ -103,8 +103,8 @@ window.addEventListener("keydown", (evt) => {
   }
 });
 
-var submitForm = (form, name, tel) => {
-  form.addEventListener('submit', (evt) => {
+var submitForm = function(form, name, tel) {
+  form.addEventListener('submit', function(evt) {
     if (!name.value || !tel.value) {
       evt.preventDefault();
       console.log("Нужно ввести имя и телефон");
@@ -120,7 +120,7 @@ var submitForm = (form, name, tel) => {
 submitForm(form, name, tel);
 submitForm(mainForm, mainName, mainTel);
 
-modalForm.addEventListener("click", (evt) => {
+modalForm.addEventListener("click", function(evt) {
   if (!evt.target.classList.contains("modal-form")) {
     console.log(1);
     return;

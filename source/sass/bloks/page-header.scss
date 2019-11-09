@@ -12,7 +12,7 @@
   padding-bottom: 274px;
   overflow: hidden;
 
-  background-image: url("../../img/header-background-dottes.png");
+  background-image: url("../img/header-background-dottes.png");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -26,11 +26,11 @@
     height: 515px;
 
 
-    background-image: url("../../img/header-promo.png");
+    background-image: url("../img/header-promo.png");
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../../img/header-promo2x.png");
+      background: url("../img/header-promo2x.png");
       background-size: 705px auto;
       background-repeat: no-repeat;
     }
@@ -263,10 +263,10 @@
       width: 284px;
       height: 340px;
 
-      background-image: url("../../img/promo-tablet.png");
+      background-image: url("../img/promo-tablet.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../../img/promo-tablet2x.png");
+        background: url("../img/promo-tablet2x.png");
         background-size: 284px auto;
         background-repeat: no-repeat;
       }
@@ -319,7 +319,7 @@
         background-repeat: no-repeat;
 
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-          background: url("../../img/circuit@2x.png");
+          background: url("../img/circuit@2x.png");
           background-size: 52px auto;
         }
       }
@@ -402,10 +402,10 @@
       width: 301px;
       height: 226px;
 
-      background-image: url("../../img/promo-mobile.png");
+      background-image: url("../img/promo-mobile.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../../img/promo-mobile2x.png");
+        background: url("../img/promo-mobile2x.png");
         background-size: 301px auto;
         background-repeat: no-repeat;
       }
@@ -443,12 +443,12 @@
         width: 38px;
         height: 38px;
 
-        background-image: url("../../img/circuit-mobile.png");
+        background-image: url("../img/circuit-mobile.png");
         background-repeat: no-repeat;
         background-position: center;
 
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-          background: url("../../img/circuit-mobile2x.png");
+          background: url("../img/circuit-mobile2x.png");
           background-size: 32px auto;
           background-repeat: no-repeat;
           background-position: center;

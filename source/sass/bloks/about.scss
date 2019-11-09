@@ -20,11 +20,11 @@
     width: 220px;
     height: 317px;
 
-    background-image: url("../../img/number.png");
+    background-image: url("../img/number.png");
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/number@2x.png");
+      background-image: url("../img/number@2x.png");
       background-repeat: no-repeat;
       background-size: 220px auto;
     }
