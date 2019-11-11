@@ -26,7 +26,7 @@
   }
 }
 
-.social-list--fb {
+.social-list__fb {
   background-image: url("../img/fb.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -36,7 +36,7 @@
   }
 }
 
-.social-list--ok {
+.social-list__ok {
   background-image: url("../img/ok.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -46,7 +46,7 @@
   }
 }
 
-.social-list--vk {
+.social-list__vk {
   background-image: url("../img/vk.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

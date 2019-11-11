@@ -89,7 +89,7 @@
   }
 }
 
-.services--production {
+.services__production {
   background-image: url("../img/production.png");
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/production@2x.png");
@@ -98,7 +98,7 @@
   }
 }
 
-.services--mount {
+.services__mount {
   background-image: url("../img/mount.png");
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/mount@2x.png");
@@ -107,7 +107,7 @@
   }
 }
 
-.services--accessories {
+.services__accessories {
   background-image: url("../img/accessories.png");
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/accessories@2x.png");
@@ -151,7 +151,7 @@
     }
   }
 
-  .services--production {
+  .services__production {
     background-image: url("../img/production-tablet.png");
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/production-tablet@2x.png");
@@ -160,7 +160,7 @@
     }
   }
 
-  .services--mount {
+  .services__mount {
     background-image: url("../img/mount-tablet.png");
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/mount-tablet@2x.png");
@@ -169,7 +169,7 @@
     }
   }
 
-  .services--accessories {
+  .services__accessories {
     background-image: url("../img/accessories-tablet.png");
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/accessories-tablet@2x.png");
@@ -212,7 +212,7 @@
     }
   }
 
-  .services--production {
+  .services__production {
     background-image: url("../img/production-mobile.png");
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/production-mobile@2x.png");
@@ -221,7 +221,7 @@
     }
   }
 
-  .services--mount {
+  .services__mount {
     background-image: url("../img/mount-mobile.png");
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/mount-mobile@2x.png");
@@ -230,7 +230,7 @@
     }
   }
 
-  .services--accessories {
+  .services__accessories {
     background-image: url("../img/accessories-mobile.png");
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/accessories-mobile@2x.png");

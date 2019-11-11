@@ -23,8 +23,8 @@ var siteMap = {
 
 var footerAdress = {
   toggleButton: document.getElementById('adress-toggle'),
-  siteMapList: document.querySelector('.footer__adress--description'),
-  siteMapListLabel: document.querySelector('.adress-toggle--label'),
+  siteMapList: document.querySelector('.footer__adress-description'),
+  siteMapListLabel: document.querySelector('.adress-toggle-label'),
 }
 
 if(headerButton && document.documentElement.clientWidth < 768) {
@@ -96,7 +96,7 @@ modalCloseButton.addEventListener('click', function(evt) {
 
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
-    if (modalForm.classList.contains("modal-form--closed")) {
+    if (!modalForm.classList.contains("modal-form--closed")) {
       evt.preventDefault();
       modalForm.classList.add("modal-form--closed");
     }

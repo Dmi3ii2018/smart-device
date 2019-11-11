@@ -33,7 +33,7 @@
   }
 }
 
-.feedback__wrapper {
+.feedback-wrapper {
   width: 29.7%;
 
   margin-left: 51%;
@@ -73,6 +73,10 @@
 
     &:focus {
       border-color: #ffffff;
+    }
+
+    &::placeholder {
+      color: #ffffff;
     }
   }
 
@@ -165,7 +169,7 @@
     padding-top: 52px;
 
     & svg {
-      left: 0;
+      left: 3%;
     }
 
     &::before {
@@ -173,7 +177,7 @@
     }
   }
 
-  .feedback__wrapper {
+  .feedback-wrapper {
     margin-left: 58%;
   }
 }
@@ -191,7 +195,7 @@
     }
   }
 
-  .feedback__wrapper {
+  .feedback-wrapper {
     width: 76.5%;
     margin-left: auto;
     margin-right: auto;
@@ -239,7 +243,7 @@
     padding-bottom: 24px;
   }
 
-  .feedback__wrapper {
+  .feedback-wrapper {
     width: 90%;
 
     & h2 {
