@@ -34,9 +34,12 @@
 }
 
 .feedback-wrapper {
-  width: 29.7%;
+  position: relative;
+  right: -51%;
 
-  margin-left: 51%;
+  width: 570px;
+
+  margin-left: unset;
 
   & h2 {
     @include font-roboto-regular;
@@ -66,7 +69,7 @@
   & textarea {
     @include hover-active;
 
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #00b9ff;
     color: #ffffff;
     border: 2px solid transparent;
     padding-left: 16px;
@@ -178,7 +181,7 @@
   }
 
   .feedback-wrapper {
-    margin-left: 58%;
+    right: -31%;
   }
 }
 
@@ -196,6 +199,7 @@
   }
 
   .feedback-wrapper {
+    position: static;
     width: 76.5%;
     margin-left: auto;
     margin-right: auto;

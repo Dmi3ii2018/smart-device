@@ -8,7 +8,7 @@
   <link rel="preload" href="fonts/ptmono-400-normal.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/robotocondensed-300-normal.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/robotocondensed-700-normal.woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
@@ -131,23 +131,23 @@
         <h2>Service Device предлагает следующие товары и услуги</h2>
         <ul>
           <li>
-            <a class="services--production" href="#">Производство печатных плат</a>
+            <a class="services__production" href="#">Производство печатных плат</a>
           </li>
           <li>
-            <a class="services--mount" href="#">Монтаж печатных плат</a>
+            <a class="services__mount" href="#">Монтаж печатных плат</a>
           </li>
           <li>
-            <a class="services--accessories" href="#">Комплектующие для светотехники</a>
+            <a class="services__accessories" href="#">Комплектующие для светотехники</a>
           </li>
         </ul>
       </div>
     </section>
     <section class="feedback">
-      <svg width="600" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 84 841.08 670.39"><defs><style>.cls-1{fill:#c4c4c4;}.cls-2{mask:url(#mask);}.cls-3{fill:none;stroke:#fff;opacity:0.2;isolation:isolate;}.cls-4{fill:#fff;}</style><mask id="mask" x="-1446.77" y="-469.41" width="2643" height="1307.73" maskUnits="userSpaceOnUse"><g id="mask0"><rect class="cls-1" x="-1446.77" y="-469.41" width="2643" height="1307.73"></rect></g></mask></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><g class="cls-2"><path class="cls-3" d="M834,7.69l-378.1,654.9L77.76,7.69Z"></path><path class="cls-3" d="M449,280.47l-221.15,383L6.68,280.47Z"></path><circle class="cls-4" cx="77.09" cy="6.88" r="6.88"></circle><circle class="cls-4" cx="6.88" cy="280.82" r="6.88"></circle><circle class="cls-4" cx="228.51" cy="663.5" r="6.88"></circle><circle class="cls-4" cx="455.64" cy="662.13" r="6.88"></circle><circle class="cls-4" cx="834.2" cy="6.88" r="6.88"></circle></g></g></g></svg>
-      <div class="feedback__wrapper main-form">
+      <svg width="600" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 84 841.08 670.39"><defs><style>.cls-1{fill:#c4c4c4;}.cls-2{mask:url(#mask);}.cls-3{fill:none;stroke:#fff;opacity:0.2;isolation:isolate;}.cls-4{fill:#fff;}</style><mask x="-1446.77" y="-469.41" width="2643" height="1307.73" maskUnits="userSpaceOnUse"><g><rect class="cls-1" x="-1446.77" y="-469.41" width="2643" height="1307.73"></rect></g></mask></defs><g data-name="Слой 2"><g data-name="Слой 1"><g class="cls-2"><path class="cls-3" d="M834,7.69l-378.1,654.9L77.76,7.69Z"></path><path class="cls-3" d="M449,280.47l-221.15,383L6.68,280.47Z"></path><circle class="cls-4" cx="77.09" cy="6.88" r="6.88"></circle><circle class="cls-4" cx="6.88" cy="280.82" r="6.88"></circle><circle class="cls-4" cx="228.51" cy="663.5" r="6.88"></circle><circle class="cls-4" cx="455.64" cy="662.13" r="6.88"></circle><circle class="cls-4" cx="834.2" cy="6.88" r="6.88"></circle></g></g></g></svg>
+      <div class="feedback-wrapper main-form">
         <h2>Остались вопросы? Задайте их нам!</h2>
         <p>Мы проконсультируем Вас бесплатно</p>
-        <form "https:="" echo.htmlacademy.ru="" courses"="" method="get">
+        <form method="get">
           <input type="text" id="name" name="name" placeholder="Имя" required="">
           <input type="tel" name="tel" pattern="[0-9]{11}" placeholder="Телефон" required="">
           <textarea name="comment" rows="8">Ваш вопрос</textarea>
@@ -180,13 +180,13 @@
           </p>
         </div>
         <ul class="social-list">
-          <li><a class="social-list--fb" aria-label="Фэйсбук" href="#"></a></li>
-          <li><a class="social-list--ok" aria-label="Одноклассники" href="#"></a></li>
-          <li><a class="social-list--vk" aria-label="Вконтакте" href="#"></a></li>
+          <li><a class="social-list__fb" aria-label="Фэйсбук" href="#"></a></li>
+          <li><a class="social-list__ok" aria-label="Одноклассники" href="#"></a></li>
+          <li><a class="social-list__vk" aria-label="Вконтакте" href="#"></a></li>
         </ul>
       </div>
       <div class="site-map">
-        <div class="site-map__title">
+        <div class="map map__title">
           <span>Разделы сайта</span>
           <input type="checkbox" class="footer__toggle visually-hidden" name="radio" id="footer-toggle">
           <label class="footer__toggle-label" for="footer-toggle" aria-label="Раскрыть список"></label>
@@ -202,12 +202,12 @@
         </ul>
       </div>
       <div class="footer__adress">
-        <div class="site-map__title">
+        <div class="map map__title">
           <span>Наш офис</span>
           <input type="checkbox" class="footer__toggle visually-hidden" name="radio" id="adress-toggle">
-          <label class="adress-toggle--label" for="adress-toggle" aria-label="Раскрыть список"></label>
+          <label class="adress-toggle-label" for="adress-toggle" aria-label="Раскрыть список"></label>
         </div>
-        <div class="footer__adress--description">
+        <div class="footer__adress-description">
           <p>г. Мытищи, Олимпийский проспект, д.10<br> +7 (495) 589-40-50<br>+7 (925) 003-87-67<br>+7 (926) 926-080-79</p>
         </div>
       </div>
@@ -221,12 +221,12 @@
       </div>
     </div>
   </footer>
-  <div class="feedback__wrapper modal-form modal-form--closed">
+  <div class="feedback-wrapper modal-form modal-form--closed">
     <div class="modal">
       <span>Закажите звонок</span>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время </p>
-      <form "https:="" echo.htmlacademy.ru="" courses"="" method="get">
-        <input type="text" id="name" name="name" placeholder="Имя" required="">
+      <form method="get">
+        <input type="text" id="form-name" name="name" placeholder="Имя" required="">
         <input type="tel" name="tel" pattern="[0-9]{11}" placeholder="Телефон" required="">
         <textarea name="comment" rows="5">Ваш вопрос</textarea>
         <div>
@@ -238,6 +238,6 @@
       <span class="modal-form__close-button" aria-label="Закрыть окно"></span>
   </div>
   </div>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
