@@ -14,7 +14,7 @@
   width: 73%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 17px;
+  padding-top: 25px;
   padding-bottom: 37px;
 
   & span {
@@ -28,12 +28,16 @@
   }
 }
 
+.footer__adress-description {
+  opacity: 0.5;
+}
+
 .footer__logo {
   display: flex;
   width: 225px;
   flex-wrap: wrap;
 
-  padding-top: 11px;
+  padding-top: 0;
 
   & p {
     @include font-roboto-bold;
@@ -57,10 +61,15 @@
       color: #788891;
     }
   }
+
+  & div {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .footer__adress {
-  margin-right: 4%;
+  margin-right: 2.5%;
 
   & div {
     display: flex;
