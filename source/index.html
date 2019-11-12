@@ -59,7 +59,7 @@
       <div class="page-header__description">
         <h1>Печатные платы</h1>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a href="#" class="modal-button" id="header-button">Получить бесплатную консультацию</a>
+        <a href="#" id="header-button">Получить бесплатную консультацию</a>
       </div>
     </div>
     <svg width="600" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 84 841.08 670.39"><defs><style>.cls-1{fill:#c4c4c4;}.cls-2{mask:url(#mask);}.cls-3{fill:none;stroke:#fff;opacity:0.2;isolation:isolate;}.cls-4{fill:#fff;}</style><mask id="mask" x="-1446.77" y="-469.41" width="2643" height="1307.73" maskUnits="userSpaceOnUse"><g id="mask0"><rect class="cls-1" x="-1446.77" y="-469.41" width="2643" height="1307.73"/></g></mask></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><g class="cls-2"><path class="cls-3" d="M834,7.69l-378.1,654.9L77.76,7.69Z"/><path class="cls-3" d="M449,280.47l-221.15,383L6.68,280.47Z"/><circle class="cls-4" cx="77.09" cy="6.88" r="6.88"/><circle class="cls-4" cx="6.88" cy="280.82" r="6.88"/><circle class="cls-4" cx="228.51" cy="663.5" r="6.88"/><circle class="cls-4" cx="455.64" cy="662.13" r="6.88"/><circle class="cls-4" cx="834.2" cy="6.88" r="6.88"/></g></g></g></svg>
@@ -156,12 +156,13 @@
       </div>
     </section>
     <section class="feedback">
+      <!-- <a name="footer-feedback"></a> -->
       <svg width="600" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 84 841.08 670.39"><defs><style>.cls-1{fill:#c4c4c4;}.cls-2{mask:url(#mask);}.cls-3{fill:none;stroke:#fff;opacity:0.2;isolation:isolate;}.cls-4{fill:#fff;}</style><mask x="-1446.77" y="-469.41" width="2643" height="1307.73" maskUnits="userSpaceOnUse"><g><rect class="cls-1" x="-1446.77" y="-469.41" width="2643" height="1307.73"/></g></mask></defs><g data-name="Слой 2"><g data-name="Слой 1"><g class="cls-2"><path class="cls-3" d="M834,7.69l-378.1,654.9L77.76,7.69Z"/><path class="cls-3" d="M449,280.47l-221.15,383L6.68,280.47Z"/><circle class="cls-4" cx="77.09" cy="6.88" r="6.88"/><circle class="cls-4" cx="6.88" cy="280.82" r="6.88"/><circle class="cls-4" cx="228.51" cy="663.5" r="6.88"/><circle class="cls-4" cx="455.64" cy="662.13" r="6.88"/><circle class="cls-4" cx="834.2" cy="6.88" r="6.88"/></g></g></g></svg>
       <div class="feedback-wrapper main-form">
         <h2>Остались вопросы? Задайте их нам!</h2>
         <p>Мы проконсультируем Вас бесплатно</p>
         <form method="get">
-          <input type="text" id="name" name="name" placeholder="Имя" required>
+          <input type="text" id="main-form-name" name="name" placeholder="Имя" required>
           <input type="tel" name="tel" pattern="[0-9]{11}" placeholder="Телефон" required>
           <textarea name="comment" rows="8">Ваш вопрос</textarea>
           <div>
@@ -204,7 +205,7 @@
           <input type="checkbox" class="footer__toggle visually-hidden" name="radio" id="footer-toggle">
           <label class ="footer__toggle-label" for="footer-toggle" aria-label="Раскрыть список"></label>
         </div>
-        <ul class="site-map__list">
+        <ul class="site-map__list roll-bar">
           <li><a href="#">О компании</a></li>
           <li><a href="#">Комплектующие</a></li>
           <li><a href="#">Продукты</a></li>
@@ -217,11 +218,17 @@
       <div class="footer__adress">
         <div class="map map__title">
           <span>Наш офис</span>
-          <input type="checkbox" class="footer__toggle visually-hidden" name="radio" id="adress-toggle">
+          <input type="checkbox" class="footer__toggle visually-hidden" name="radio" id="adress-toggle" checked>
           <label class="adress-toggle-label" for="adress-toggle" aria-label="Раскрыть список"></label>
         </div>
-        <div class="footer__adress-description">
-          <p>г. Мытищи, Олимпийский проспект, д.10<br/> +7 (495) 589-40-50<br/>+7 (925) 003-87-67<br/>+7 (926) 926-080-79</p>
+        <div class="footer__adress-description roll-bar roll-bar--open">
+          <ul>
+            <li><a>г. Мытищи, Олимпийский проспект, д.10</a></li>
+            <li><a href="tel: +74955894050">+7 (495) 589-40-50</a></li>
+            <li><a href="tel:+79250038767">+7 (925) 003-87-67</a></li>
+            <li><a href="tel:+792692608079">+7 (926) 926-080-79</a></li>
+          </ul>
+          <p><br/> <br/><br/></p>
         </div>
       </div>
     </div>
@@ -239,7 +246,7 @@
       <span>Закажите звонок</span>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время </p>
       <form method="get">
-        <input type="text" id="form-name" name="name" placeholder="Имя" required>
+        <input type="text" name="name-popup" placeholder="Имя" required>
         <input type="tel" name="tel" pattern="[0-9]{11}" placeholder="Телефон" required>
         <textarea name="comment" rows="5">Ваш вопрос</textarea>
         <div>
@@ -251,5 +258,5 @@
       <span class="modal-form__close-button" aria-label="Закрыть окно"></span>
   </div>
   </div>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>

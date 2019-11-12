@@ -1,6 +1,6 @@
 .site-map {
   width: 42.8%;
-  margin-left: 9.5%;
+  margin-left: 10.5%;
 
   & ul {
     @include list-clear;
@@ -9,6 +9,10 @@
     flex-wrap: wrap;
     flex-direction: row;
     overflow: hidden;
+
+    padding-top: 15px;
+
+    opacity: 0.5;
 
     & li {
       flex-basis: 50%;
@@ -26,11 +30,6 @@
   }
 }
 
-.site-map__list {
-  opacity: 0.5;
-  padding-top: 15px;
-}
-
 @media (max-width: 1600px) {
   .site-map {
     margin-left: 0;
@@ -43,6 +42,16 @@
 
     & ul {
       flex-direction: column;
+
+      padding-top: 0;
+
+      line-height: 25px;
+
+      & li {
+        &:nth-child(2n) {
+          order: 5;
+        }
+      }
     }
   }
 
@@ -55,14 +64,13 @@
   .site-map {
     width: 100%;
 
-    padding-top: 28px;
+    padding-top: 26px;
     padding-bottom: 21px;
     padding-left: 5%;
     border-top: 1px solid #626962;
     border-bottom: 1px solid #626962;
 
     & ul {
-      display: none;
       margin-top: 20px;
     }
   }

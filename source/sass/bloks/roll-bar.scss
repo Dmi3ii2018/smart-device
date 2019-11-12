@@ -1,0 +1,9 @@
+@media (max-width: $tablet-width) {
+  .roll-bar {
+    display: none !important;
+  }
+
+  .roll-bar--open {
+    display: block !important;
+  }
+}
