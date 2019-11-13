@@ -4,7 +4,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  border-top: 1px solid #626962;
+  border-top: 1px solid rgba(98, 105, 98, 0.2);
 
   & div {
     display: flex;
@@ -36,6 +36,7 @@
 
 .footer-copyright__condition {
   margin-left: 11%;
+  margin-right: auto;
 }
 
 .footer-copyright__develop {
@@ -47,6 +48,7 @@
   .footer-copyright {
     & div {
       justify-content: space-between;
+      width: 90%;
     }
   }
 

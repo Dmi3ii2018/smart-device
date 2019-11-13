@@ -71,6 +71,12 @@
   }
 }
 
+@media (max-width: 1600px) {
+  .about-company {
+    width: 90%;
+  }
+}
+
 @media (max-width: $desktop-width-1024) {
   .about-company {
     width: 93%;

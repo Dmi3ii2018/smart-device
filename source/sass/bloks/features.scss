@@ -74,6 +74,12 @@
   }
 }
 
+@media (max-width: 1600px) {
+  .features__list {
+    width: 90%;
+  }
+}
+
 @media (max-width: $desktop-width-1024) {
   & .features__list {
     width: 93%;

@@ -17,8 +17,27 @@ var textArea = form.querySelector('[name=comment]');
 var footerRollBar = document.querySelectorAll('.roll-bar');
 var footer = document.querySelector('.footer__wrapper');
 var footerToggleButton = document.querySelectorAll('.footer__toggle');
+var toggleTitle = document.querySelectorAll('.map__title');
+var toggleLabel = document.querySelectorAll('.toggle-label');
 
 var footerFeedback = document.querySelector('.feedback');
+
+toggleLabel.forEach(function(it) {
+  it.addEventListener('click', function(evt) {
+      if(evt.target == it) {
+        // evt.target.classList.add('toggle-label--open');
+        evt.target.style.height = '2px';
+        evt.target.style.overflow = 'hidden';
+        evt.target.style.pointerEvents = 'none';
+      } else {
+        // evt.target.classList.remove('toggle-label--open');
+        evt.target.style.height = '17px';
+        evt.target.style.overflow = 'visible';
+        evt.target.style.pointerEvents = 'auto';
+      }
+  })
+})
+
 
 if(headerButton && document.documentElement.clientWidth < 768) {
   headerButton.textContent = "бесплатная консультация";
@@ -26,7 +45,7 @@ if(headerButton && document.documentElement.clientWidth < 768) {
 
 headerButton.addEventListener('click', function(evt) {
   evt.preventDefault();
-  footerFeedback.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+  footerFeedback.scrollIntoView({alignToTop: false, behavior: "smooth", block: "nearest", inline: "center"});
 })
 
 footerToggleButton.forEach(function(it) {

@@ -32,7 +32,7 @@
 
 @media (max-width: 1600px) {
   .site-map {
-    margin-left: 0;
+    margin-left: 6%;
   }
 }
 
@@ -67,8 +67,8 @@
     padding-top: 26px;
     padding-bottom: 21px;
     padding-left: 5%;
-    border-top: 1px solid #626962;
-    border-bottom: 1px solid #626962;
+    border-top: 1px solid rgba(98, 105, 98, 0.2);
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
 
     & ul {
       margin-top: 20px;

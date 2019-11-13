@@ -15,11 +15,11 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 25px;
-  padding-bottom: 44px;
+  padding-bottom: 55px;
 
   & span {
     @include font-roboto-regular;
-    margin-bottom: 21px;
+    margin-bottom: 24px;
 
     font-size: 15px;
     line-height: 16px;
@@ -57,7 +57,7 @@
     width: 163px;
 
     margin-top: 7px;
-    margin-bottom: 9px;
+    margin-bottom: 22px;
     padding-left: 18px;
 
     font-size: 25px;
@@ -101,6 +101,10 @@
 }
 
 @media (max-width: 1600px) {
+  .footer__wrapper {
+    width: 90%;
+  }
+
   .footer__logo {
     & div {
       display: flex;
@@ -159,7 +163,7 @@
   }
 
   .footer__adress {
-    margin-right: 2%;
+    margin-right: 6.5%;
 
     & div {
       & p {

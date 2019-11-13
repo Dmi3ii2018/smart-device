@@ -116,6 +116,12 @@
   }
 }
 
+@media (max-width: 1600px) {
+  .services__wrapper {
+    width: 90%;
+  }
+}
+
 @media (max-width: $desktop-width-1024) {
   & .services {
     padding-top: 22px;
@@ -142,7 +148,7 @@
         & a {
           padding-left: 6%;
           padding-top: 40px;
-          padding-right: 70%;
+          padding-right: 90%;
           min-height: 256px;
 
           background-position: 100% 100%;
