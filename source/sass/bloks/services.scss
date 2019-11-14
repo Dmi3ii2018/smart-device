@@ -22,13 +22,15 @@
     @include list-clear;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-    margin-top: 51px;
+    justify-content: flex-start;
 
     & li {
       position: relative;
       width: 31.6%;
+
+      margin-top: 27px;
+      margin-right: 2.6%;
+
       min-height: 620px;
 
       &::before {
@@ -84,6 +86,10 @@
         &:hover {
           @include hover-active;
         }
+      }
+
+      &:nth-child(3n) {
+        margin-right: 0;
       }
     }
   }
