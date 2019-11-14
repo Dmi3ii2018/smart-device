@@ -250,6 +250,21 @@
   }
 }
 
+@media (max-width: 1600px) {
+  .page-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page-header__wrapper {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (max-width: $desktop-width-1024) {
   .page-header {
     padding-left: 2.5%;
@@ -281,6 +296,7 @@
   }
 
   .page-header__wrapper {
+    width: 100%;
     & img {
       top: -12%;
       left: 45%;

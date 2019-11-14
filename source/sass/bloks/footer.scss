@@ -19,7 +19,6 @@
 
   & span {
     @include font-roboto-regular;
-    margin-bottom: 24px;
 
     font-size: 15px;
     line-height: 16px;
@@ -30,6 +29,8 @@
 
 .footer__adress-description {
   opacity: 0.5;
+  margin-top: 26px;
+  letter-spacing: 0.08em;
 
   & ul {
     @include list-clear;
@@ -84,7 +85,7 @@
 }
 
 .footer__adress {
-  margin-right: 3%;
+  margin-right: 0;
 
   & div {
     display: flex;
@@ -163,7 +164,7 @@
   }
 
   .footer__adress {
-    margin-right: 6.5%;
+    margin-right: 0;
 
     & div {
       & p {
@@ -173,7 +174,8 @@
   }
 
   .footer__adress-description {
-    padding-top: 7px;
+    padding-top: 0;
+    margin-top: 23px;
   }
 }
 
@@ -187,7 +189,7 @@
 
     & .footer__adress-description {
       width: 80%;
-      margin-top: 23px;
+      margin-top: 22px;
     }
 
     & p {

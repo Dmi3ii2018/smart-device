@@ -45,7 +45,7 @@ if(headerButton && document.documentElement.clientWidth < 768) {
 
 headerButton.addEventListener('click', function(evt) {
   evt.preventDefault();
-  footerFeedback.scrollIntoView({alignToTop: false, behavior: "smooth", block: "nearest", inline: "center"});
+  mainName.scrollIntoView({alignToTop: false, behavior: "smooth", block: "nearest", inline: "center"});
 })
 
 footerToggleButton.forEach(function(it) {

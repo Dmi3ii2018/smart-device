@@ -1,7 +1,7 @@
 .feedback {
   position: relative;
   padding-top: 60px;
-  padding-bottom: 71px;
+  padding-bottom: 64px;
 
   &::before {
     position: absolute;
@@ -181,7 +181,8 @@
   }
 
   .feedback-wrapper {
-    right: -41%;
+    right: -54%;
+    width: 43%;
   }
 }
 
